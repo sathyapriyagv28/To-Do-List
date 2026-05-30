@@ -6,7 +6,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState("");
 
-  const API = "https://to-do-list-38f4.onrender.com/tasks";
+  const API = import.meta.env.VITE_API_URL;
 
   const fetchTasks = async () => {
     const res = await axios.get(API);
