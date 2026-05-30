@@ -6,7 +6,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState("");
 
-  const API = "http://localhost:5000/api/tasks";
+  const API = "https://to-do-list-38f4.onrender.com/tasks";
 
   const fetchTasks = async () => {
     const res = await axios.get(API);
